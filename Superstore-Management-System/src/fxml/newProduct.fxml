@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.newProduct_Controller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <Label alignment="CENTER" layoutX="241.0" layoutY="14.0" prefHeight="75.0" prefWidth="800.0" text="Create Product" AnchorPane.bottomAnchor="425.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="473.0" layoutY="81.0" prefHeight="200.0" prefWidth="150.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtName" promptText="Name" />
+                  <TextField fx:id="txtDescription" promptText="Description" />
+                  <TextField fx:id="txtPrice" promptText="Price" />
+                  <TextField fx:id="txtQuantity" promptText="Quantity" />
+                  <TextField fx:id="txtFixedCost" promptText="Fixed Cost" />
+                  <TextField fx:id="txtCarryingCost" promptText="Carrying Cost" />
+                  <TextField fx:id="txtDemand" promptText="Demand" />
+               </children>
+            </VBox>
+            <VBox layoutX="259.0" layoutY="81.0" prefHeight="274.0" prefWidth="150.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Name" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Description" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Price" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Quantity" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Fixed Cost" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Carrying Cost" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Demand" />
+               </children>
+            </VBox>
+            <Button fx:id="btnUpdate" layoutX="555.0" layoutY="396.0" mnemonicParsing="false" onAction="#Create_button" text="Create" />
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../system_images/default_image.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnUploadImage" layoutX="54.0" layoutY="248.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="26.0" prefWidth="119.0" text="Upload Image" />
+            <Button fx:id="btnCancel" layoutX="231.0" layoutY="396.0" mnemonicParsing="false" onAction="#Cancel_button" text="Cancel" />
+            <Text fx:id="txtImage" layoutX="56.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File selected: none" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
