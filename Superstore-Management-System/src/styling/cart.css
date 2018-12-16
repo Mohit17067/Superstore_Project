@@ -1,0 +1,8 @@
+.root * {
+    -fx-font-family: Arial;
+    -fx-background-radius: 1;
+}
+
+.header-1 {
+	-fx-font-size: 20;
+}

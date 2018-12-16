@@ -1,0 +1,21 @@
+.root * {
+	-fx-font-size: 14;
+    -fx-font-family: Avenir;
+    -fx-background-radius: 1;
+}
+
+.left-pane {
+	-fx-background-image: url("../system_images/login-background.jpg") 
+}
+
+.right-pane {
+	
+}
+
+.button {
+	-fx-background-radius: 1;
+}
+
+.login-button {
+	-fx-background-color: #63CAEA;
+}
