@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@../styling/cart.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.cart_Controller">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="58.0" style="-fx-background-color: #52373B;">
+         <children>
+            <Button maxHeight="-Infinity" mnemonicParsing="false" prefHeight="34.0" style="-fx-background-color: #EC5633; -fx-background-radius: 0;" text="Search" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="34.0" prefWidth="437.0" style="-fx-background-radius: 0;" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="330.0" AnchorPane.topAnchor="12.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <ImageView fitHeight="25.0" fitWidth="90.0" layoutX="1.0" layoutY="17.0" pickOnBounds="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="16.5">
+               <image>
+                  <Image url="@../../../../../../../Desktop/Screen%20Shot%202018-10-29%20at%206.37.15%20PM.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="564.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: #52373B;" textFill="WHITE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-sort-down-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="688.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="12.0">
+               <image>
+                  <Image url="@../icons/icons8-person_male.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="603.46533203125" layoutY="33.7685546875" strokeType="OUTSIDE" strokeWidth="0.0" text="Shloak Aggarwal" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="444.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefViewportHeight="603.0" prefViewportWidth="660.0">
+               <content>
+                  <VBox prefHeight="427.0" prefWidth="664.0">
+                     <children>
+                        <AnchorPane prefHeight="72.0" prefWidth="664.0">
+                           <children>
+                              <Label layoutX="76.0" layoutY="5.0" styleClass="header-1" text="Shopping Cart" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="5.0">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="376.0" layoutY="15.0" text="Price" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="10.0" />
+                              <Label layoutX="544.0" layoutY="13.0" prefWidth="75.0" text="Quantity" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="358.0" prefWidth="664.0">
+                           <children>
+                              <ScrollPane layoutX="9.0" layoutY="29.0" prefHeight="286.0" prefWidth="262.0">
+                                 <content>
+                                    <ListView fx:id="lsvProduct" prefHeight="285.0" prefWidth="260.0" />
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane layoutX="397.0" layoutY="27.0" prefHeight="286.0" prefWidth="126.0">
+                                 <content>
+                                    <ListView fx:id="lsvPrice" prefHeight="284.0" prefWidth="123.0" />
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane layoutX="551.0" layoutY="27.0" prefHeight="286.0" prefWidth="90.0">
+                                 <content>
+                                    <ListView fx:id="lsvUnit" prefHeight="284.0" prefWidth="88.0" />
+                                 </content></ScrollPane>
+                              <Button fx:id="btnRemove" layoutX="103.0" layoutY="318.0" mnemonicParsing="false" onAction="#Remove_button" text="Remove" />
+                              <Button fx:id="btnRefresh" layoutX="562.0" layoutY="317.0" mnemonicParsing="false" onAction="#Refresh_button" text="Refresh" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="443.0" prefWidth="148.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="1.0" layoutY="17.0" prefHeight="43.0" prefWidth="185.0" styleClass="header-1" text="Total" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCheckout" layoutX="20.0" layoutY="365.0" mnemonicParsing="false" onAction="#Checkout_button" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: #52373B;" text="Checkout" textFill="WHITE" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Label fx:id="lblTotal" layoutX="15.0" layoutY="67.0" prefHeight="43.0" prefWidth="101.0" text="total" />
+                  <Button fx:id="btnExit" layoutX="21.0" layoutY="411.0" mnemonicParsing="false" onAction="#Exit_button" prefHeight="26.0" prefWidth="89.0" text="Buy Later!" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
