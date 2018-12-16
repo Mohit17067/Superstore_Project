@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@../styling/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.loginController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="left-pane">
+         <children>
+            <VBox layoutX="75.0" layoutY="195.0" spacing="20.0" AnchorPane.leftAnchor="75.0">
+               <children>
+                  <Button fx:id="btnEnd" alignment="CENTER" layoutX="57.0" layoutY="123.0" mnemonicParsing="false" onAction="#Users_button" prefHeight="30.0" prefWidth="250.0" text="End User" />
+                  <Button fx:id="btnStore" alignment="CENTER" layoutX="152.0" layoutY="87.0" mnemonicParsing="false" onAction="#Users_button" prefHeight="30.0" prefWidth="250.0" text="Store Admin" />
+                  <Button fx:id="btnWarehouse" layoutX="161.0" layoutY="297.0" mnemonicParsing="false" onAction="#Users_button" prefHeight="30.0" prefWidth="250.0" text="Warehouse Admin" />
+                  <Button fx:id="btnSuper" alignment="CENTER" layoutX="132.0" layoutY="185.0" mnemonicParsing="false" onAction="#Users_button" prefHeight="30.0" prefWidth="250.0" text="Super User" />
+               </children>
+            </VBox>
+            <Label fx:id="lblUser" alignment="CENTER" layoutX="75.0" layoutY="133.0" prefHeight="30.0" prefWidth="250.0" text="Please Select User Type" textFill="WHITE" AnchorPane.leftAnchor="75.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="right-pane">
+         <children>
+            <Group layoutX="91.0" layoutY="20.0" AnchorPane.leftAnchor="75.0">
+               <children>
+                  <Button fx:id="btnLogin" layoutY="291.0" mnemonicParsing="false" onAction="#login_button" prefHeight="30.0" prefWidth="250.0" styleClass="login-button" text="Login">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txLogin" editable="false" layoutY="176.0" prefHeight="30.0" prefWidth="250.0" promptText="Username">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutY="113.0" prefHeight="30.0" prefWidth="250.0" text="Good Afternoon. Welcome Back!" />
+                  <PasswordField fx:id="txPswd" editable="false" layoutY="228.0" prefHeight="30.0" prefWidth="250.0" promptText="Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Group>
+            <Label fx:id="lblWarning" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="387.0" prefHeight="55.0" prefWidth="324.0" textFill="#e41212" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
