@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.productView_Controller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <Label alignment="CENTER" layoutX="241.0" layoutY="14.0" prefHeight="64.0" prefWidth="800.0" text="Product Information" AnchorPane.bottomAnchor="385.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="438.0" layoutY="81.0" prefHeight="265.0" prefWidth="245.0" spacing="15.0">
+               <children>
+                  <Label fx:id="lblName" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="Shoe">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDescription" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="209.0" text="Nice shoe">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPrice" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="Rs 200">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblQuantity" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFixedCost" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="150">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCarryingCost" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="20">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDemand" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="80">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="259.0" layoutY="81.0" prefHeight="274.0" prefWidth="150.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Name" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Description" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Price" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Quantity" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Fixed Cost" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Carrying Cost" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Demand" />
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../product_images/sample_product2.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnExit" layoutX="378.0" layoutY="399.0" mnemonicParsing="false" onAction="#Exit_button" prefHeight="35.0" prefWidth="78.0" text="Exit" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

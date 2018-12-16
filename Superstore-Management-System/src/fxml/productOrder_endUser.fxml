@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="284.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.productOrder_Controller">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="7.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../product_images/sample_product.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblName" alignment="CENTER" layoutX="159.0" layoutY="15.0" prefHeight="36.0" prefWidth="209.0" text="ProductName">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Button fx:id="btnAddToCart" layoutX="377.0" layoutY="223.0" mnemonicParsing="false" onAction="#Cart_button" prefHeight="36.0" prefWidth="100.0" text="Add to cart" />
+      <Label fx:id="lblPrice" layoutX="406.0" layoutY="25.0" prefHeight="36.0" prefWidth="69.0" text="\$899" />
+      <Button fx:id="btnIncrease" layoutX="440.0" layoutY="118.0" mnemonicParsing="false" onAction="#Increase_button" prefHeight="26.0" prefWidth="28.0" text="+" />
+      <TextField fx:id="txtUnits" editable="false" layoutX="412.0" layoutY="118.0" prefHeight="26.0" prefWidth="28.0" text="0" />
+      <Button fx:id="btnDecrease" layoutX="386.0" layoutY="118.0" mnemonicParsing="false" onAction="#Decrease_button" prefHeight="26.0" prefWidth="28.0" text="-" />
+      <Label layoutX="45.0" layoutY="223.0" text="Rating: 4.3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="TOP_LEFT" layoutX="200.0" layoutY="80.0" prefHeight="90.0" prefWidth="134.0" text="Description">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQuantity" layoutX="354.0" layoutY="167.0" prefHeight="36.0" prefWidth="134.0" text="Units Available: " />
+      <Button fx:id="btnCancel" layoutX="265.0" layoutY="231.0" mnemonicParsing="false" onAction="#Cancel_button" text="Cancel" />
+   </children>
+</AnchorPane>
