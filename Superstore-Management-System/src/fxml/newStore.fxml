@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.newStore_Controller">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #52373B;">
+         <children>
+            <Button maxHeight="-Infinity" mnemonicParsing="false" prefHeight="34.0" style="-fx-background-color: #EC5633; -fx-background-radius: 0;" text="Search" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="34.0" prefWidth="437.0" style="-fx-background-radius: 0;" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="330.0" AnchorPane.topAnchor="12.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <ImageView fitHeight="25.0" fitWidth="90.0" layoutX="1.0" layoutY="17.0" pickOnBounds="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="16.5">
+               <image>
+                  <Image url="@../../../../../../../Desktop/Screen%20Shot%202018-10-29%20at%206.37.15%20PM.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="489.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #52373B;" text="Cart" textFill="WHITE" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-shopping-cart-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="564.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: #52373B;" textFill="WHITE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-sort-down-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="688.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="12.0">
+               <image>
+                  <Image url="@../icons/icons8-person_male.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="603.46533203125" layoutY="33.7685546875" strokeType="OUTSIDE" strokeWidth="0.0" text="Shloak Aggarwal" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="449.0" prefWidth="800.0">
+         <children>
+            <Label alignment="CENTER" layoutX="241.0" layoutY="14.0" prefHeight="61.0" prefWidth="803.0" text="New Store" AnchorPane.bottomAnchor="388.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="420.0" layoutY="81.0" prefHeight="200.0" prefWidth="150.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txStoreName" />
+                  <TextField fx:id="txStoreID" />
+                  <TextField fx:id="txAdminName" />
+                  <TextField fx:id="txAdminID" />
+                  <TextField fx:id="txPassword" />
+               </children>
+            </VBox>
+            <VBox layoutX="189.0" layoutY="81.0" prefHeight="200.0" prefWidth="150.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Name" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Store ID" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Admin Name:" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Admin ID" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" text="Admin Password" />
+               </children>
+            </VBox>
+            <Button fx:id="btnCreate" layoutX="469.0" layoutY="325.0" mnemonicParsing="false" onAction="#Create_button" text="Create" />
+            <Button fx:id="btnCancel" layoutX="287.0" layoutY="325.0" mnemonicParsing="false" onAction="#Cancel_button" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
