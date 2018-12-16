@@ -2,6 +2,11 @@
 A Superstore management system made with JavaFX. <br> Superstore consists of stores and warehouses located in different cities.
 There are four types of Users involved - SuperUser, StoreAdmin, WarehouseAdmin and EndUser. The functionality of the project is explained below with the gif.
 
+## Requirement
+`Java 8 or above` <br>
+`javafx`<br>
+`SceneBuilder` (optional)
+
 ## Functionality
 
 ![GIF FOR PROJECT](https://github.com/Mohit17067/Superstore_Project/blob/master/Superstore-Management-System/project.gif "GIF for project")\
