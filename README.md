@@ -9,7 +9,7 @@ There are four types of Users involved - SuperUser, StoreAdmin, WarehouseAdmin a
 
 ## Functionality
 
-![GIF FOR PROJECT](https://github.com/Mohit17067/Superstore_Project/blob/master/Superstore-Management-System/project.gif "GIF for project")\
+![GIF FOR PROJECT](https://github.com/Mohit17067/Superstore_Project/blob/master/Superstore-Management-System/project.gif "GIF for project")
 ### Login Page
 The Application starts with a Login Page with the user types on the left and the login bars on the right.
   * Select the type of User from the left. Login fields can't be filled without selecting the user type. On pressing Login,       an alert to select the user pops up.
